@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'todolist',
-    "corsheaders"
+    "corsheaders",
+    'django_rundbg',
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,6 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
     ]
 }
+
+DEBUG = True
+DEBUG_PROPAGATE_EXCEPTIONS = True
